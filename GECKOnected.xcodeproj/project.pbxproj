@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		215BD193252FB8250FCD54B3 /* Pods_GECKOnected.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F785B00739544D043DC8B52E /* Pods_GECKOnected.framework */; };
 		F66351C21F4238D80031F000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66351C11F4238D80031F000 /* AppDelegate.swift */; };
-		F66351C41F4238D80031F000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66351C31F4238D80031F000 /* ViewController.swift */; };
+		F66351C41F4238D80031F000 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66351C31F4238D80031F000 /* LoginViewController.swift */; };
 		F66351C71F4238D80031F000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66351C51F4238D80031F000 /* Main.storyboard */; };
 		F66351C91F4238D80031F000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66351C81F4238D80031F000 /* Assets.xcassets */; };
 		F66351CC1F4238D80031F000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66351CA1F4238D80031F000 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		75D65C8743BF9DDB0C148524 /* Pods-GECKOnected.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GECKOnected.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GECKOnected/Pods-GECKOnected.debug.xcconfig"; sourceTree = "<group>"; };
 		F66351BE1F4238D80031F000 /* GECKOnected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GECKOnected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66351C11F4238D80031F000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F66351C31F4238D80031F000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F66351C31F4238D80031F000 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F66351C61F4238D80031F000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F66351C81F4238D80031F000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F66351CB1F4238D80031F000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F66351C11F4238D80031F000 /* AppDelegate.swift */,
-				F66351C31F4238D80031F000 /* ViewController.swift */,
+				F66351C31F4238D80031F000 /* LoginViewController.swift */,
 				F66351C51F4238D80031F000 /* Main.storyboard */,
 				F66351C81F4238D80031F000 /* Assets.xcassets */,
 				F66351CA1F4238D80031F000 /* LaunchScreen.storyboard */,
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F66351C41F4238D80031F000 /* ViewController.swift in Sources */,
+				F66351C41F4238D80031F000 /* LoginViewController.swift in Sources */,
 				F66351C21F4238D80031F000 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

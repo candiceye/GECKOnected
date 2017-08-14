@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  GECKOnected
 //
 //  Created by Candice Ye on 8/14/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +26,18 @@ class ViewController: UIViewController {
         let usernameTextField = UITextField(frame: CGRect(x: view.frame.width * 0.08, y: view.frame.height * 0.402, width: view.frame.width * 0.8, height: 15.5))
             usernameTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
             view.addSubview(usernameTextField)
+
         let passwordTextField = UITextField(frame: CGRect(x: view.frame.width * 0.08, y: view.frame.height * 0.505, width: view.frame.width * 0.8, height: 15.5))
             passwordTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
             view.addSubview(passwordTextField)
+        
+        let loginButton = UIButton(frame: CGRect(x: view.frame.width * 127/375, y: view.frame.height * 409/667, width: view.frame.width * 121/375, height: view.frame.height * 43/667))
+            loginButton.setImage(#imageLiteral(resourceName: "loginButton"), for: UIControlState.normal)
+            view.addSubview(loginButton)
+        
+        let createAccountButton = UIButton(frame: CGRect(x: view.frame.width * 88/375, y: view.frame.height * 554/667, width: view.frame.width * 199/375, height: view.frame.height * 42/667))
+            createAccountButton.setImage(#imageLiteral(resourceName: "createAccountButton"), for: UIControlState.normal)
+            view.addSubview(createAccountButton)
     }
 
     override func didReceiveMemoryWarning() {
