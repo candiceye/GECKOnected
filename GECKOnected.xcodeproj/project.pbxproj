@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		215BD193252FB8250FCD54B3 /* Pods_GECKOnected.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F785B00739544D043DC8B52E /* Pods_GECKOnected.framework */; };
 		F66351C21F4238D80031F000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66351C11F4238D80031F000 /* AppDelegate.swift */; };
 		F66351C41F4238D80031F000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66351C31F4238D80031F000 /* ViewController.swift */; };
 		F66351C71F4238D80031F000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66351C51F4238D80031F000 /* Main.storyboard */; };
 		F66351C91F4238D80031F000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66351C81F4238D80031F000 /* Assets.xcassets */; };
 		F66351CC1F4238D80031F000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66351CA1F4238D80031F000 /* LaunchScreen.storyboard */; };
+		F6FD11301F423FDE00374DA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6FD112F1F423FDE00374DA7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69AEB5C6AB52E485D58EF1E7 /* Pods-GECKOnected.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GECKOnected.release.xcconfig"; path = "Pods/Target Support Files/Pods-GECKOnected/Pods-GECKOnected.release.xcconfig"; sourceTree = "<group>"; };
+		75D65C8743BF9DDB0C148524 /* Pods-GECKOnected.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GECKOnected.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GECKOnected/Pods-GECKOnected.debug.xcconfig"; sourceTree = "<group>"; };
 		F66351BE1F4238D80031F000 /* GECKOnected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GECKOnected.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66351C11F4238D80031F000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66351C31F4238D80031F000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		F66351C81F4238D80031F000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F66351CB1F4238D80031F000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66351CD1F4238D80031F000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6FD112F1F423FDE00374DA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F785B00739544D043DC8B52E /* Pods_GECKOnected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GECKOnected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215BD193252FB8250FCD54B3 /* Pods_GECKOnected.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9DAF4F6D501490ADD3A75DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D65C8743BF9DDB0C148524 /* Pods-GECKOnected.debug.xcconfig */,
+				69AEB5C6AB52E485D58EF1E7 /* Pods-GECKOnected.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4AEE6109D8B9A3152971BD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F785B00739544D043DC8B52E /* Pods_GECKOnected.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F66351B51F4238D70031F000 = {
 			isa = PBXGroup;
 			children = (
 				F66351C01F4238D80031F000 /* GECKOnected */,
 				F66351BF1F4238D80031F000 /* Products */,
+				C9DAF4F6D501490ADD3A75DD /* Pods */,
+				E4AEE6109D8B9A3152971BD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				F66351C81F4238D80031F000 /* Assets.xcassets */,
 				F66351CA1F4238D80031F000 /* LaunchScreen.storyboard */,
 				F66351CD1F4238D80031F000 /* Info.plist */,
+				F6FD112F1F423FDE00374DA7 /* GoogleService-Info.plist */,
 			);
 			path = GECKOnected;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F66351D01F4238D80031F000 /* Build configuration list for PBXNativeTarget "GECKOnected" */;
 			buildPhases = (
+				EFB5C89A5DB5E39DF2180BFC /* [CP] Check Pods Manifest.lock */,
 				F66351BA1F4238D70031F000 /* Sources */,
 				F66351BB1F4238D70031F000 /* Frameworks */,
 				F66351BC1F4238D70031F000 /* Resources */,
+				89644F90A7538D94BED1B41F /* [CP] Embed Pods Frameworks */,
+				CE3F40267920A2392FFBF4D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66351CC1F4238D80031F000 /* LaunchScreen.storyboard in Resources */,
+				F6FD11301F423FDE00374DA7 /* GoogleService-Info.plist in Resources */,
 				F66351C91F4238D80031F000 /* Assets.xcassets in Resources */,
 				F66351C71F4238D80031F000 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89644F90A7538D94BED1B41F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GECKOnected/Pods-GECKOnected-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GECKOnected/Pods-GECKOnected-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE3F40267920A2392FFBF4D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GECKOnected/Pods-GECKOnected-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB5C89A5DB5E39DF2180BFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GECKOnected-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F66351BA1F4238D70031F000 /* Sources */ = {
@@ -259,6 +346,7 @@
 		};
 		F66351D11F4238D80031F000 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D65C8743BF9DDB0C148524 /* Pods-GECKOnected.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 98J9N2U3MZ;
@@ -272,6 +360,7 @@
 		};
 		F66351D21F4238D80031F000 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69AEB5C6AB52E485D58EF1E7 /* Pods-GECKOnected.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 98J9N2U3MZ;
@@ -302,6 +391,7 @@
 				F66351D21F4238D80031F000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
