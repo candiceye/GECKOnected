@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  ViewController.swift
 //  GECKOnected
 //
 //  Created by Candice Ye on 8/14/17.
