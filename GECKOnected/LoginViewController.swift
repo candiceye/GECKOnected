@@ -23,11 +23,11 @@ class LoginViewController: UIViewController {
             wallpaper.contentMode = .scaleAspectFill
             view.addSubview(wallpaper)
         
-        let usernameTextField = UITextField(frame: CGRect(x: view.frame.width * 0.08, y: view.frame.height * 0.402, width: view.frame.width * 0.8, height: 15.5))
+        let usernameTextField = UITextField(frame: CGRect(x: view.frame.width * 30/375, y: view.frame.height * 260/667, width: view.frame.width * 315/375, height: view.frame.height * 28/667))
             usernameTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
             view.addSubview(usernameTextField)
 
-        let passwordTextField = UITextField(frame: CGRect(x: view.frame.width * 0.08, y: view.frame.height * 0.505, width: view.frame.width * 0.8, height: 15.5))
+        let passwordTextField = UITextField(frame: CGRect(x: view.frame.width * 30/375, y: view.frame.height * 327/667, width: view.frame.width * 315/375, height: view.frame.height * 28/667))
             passwordTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
             view.addSubview(passwordTextField)
         
@@ -37,7 +37,13 @@ class LoginViewController: UIViewController {
         
         let createAccountButton = UIButton(frame: CGRect(x: view.frame.width * 88/375, y: view.frame.height * 554/667, width: view.frame.width * 199/375, height: view.frame.height * 42/667))
             createAccountButton.setImage(#imageLiteral(resourceName: "createAccountButton"), for: UIControlState.normal)
+            createAccountButton.addTarget(self, action: #selector(loginToSignup), for: .touchUpInside)
             view.addSubview(createAccountButton)
+    }
+    
+    //Functions
+    func loginToSignup() {
+        self.performSegue(withIdentifier: "loginToSignup", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

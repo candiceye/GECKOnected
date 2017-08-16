@@ -25,27 +25,33 @@ class SignupViewController: UIViewController {
         
         let backToLoginButton = UIButton(frame: CGRect(x: view.frame.width * 14/375, y: view.frame.height * 33/667, width: view.frame.width * 116/375, height: view.frame.height * 30/667))
         backToLoginButton.setImage(#imageLiteral(resourceName: "backToLogin"), for: UIControlState.normal)
+        backToLoginButton.addTarget(self, action: #selector(signupToLogin), for: .touchUpInside)
         view.addSubview(backToLoginButton)
         
-        let fullnameTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 221/667, width: view.frame.width * 314/375, height: 28/667))
+        let fullnameTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 221/667, width: view.frame.width * 314/375, height: view.frame.height * 28/667))
         fullnameTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
         view.addSubview(fullnameTextField)
         
-        let emailTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 289/667, width: view.frame.width * 314/375, height: 28/667))
+        let emailTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 289/667, width: view.frame.width * 314/375, height: view.frame.height * 28/667))
         emailTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
         view.addSubview(emailTextField)
         
-        let usernameTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 357/667, width: view.frame.width * 314/375, height: 28/667))
+        let usernameTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 357/667, width: view.frame.width * 314/375, height: view.frame.height * 28/667))
         usernameTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
         view.addSubview(usernameTextField)
         
-        let passwordTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 425/667, width: view.frame.width * 314/375, height: 28/667))
+        let passwordTextField = UITextField(frame: CGRect(x: view.frame.width * 31/375, y: view.frame.height * 425/667, width: view.frame.width * 314/375, height: view.frame.height * 28/667))
         passwordTextField.textColor = UIColor(red: 68/255, green: 192/255, blue: 255/255, alpha: 1)
         view.addSubview(passwordTextField)
         
         let signupButton = UIButton(frame: CGRect(x: view.frame.width * 115/375, y: view.frame.height * 508/667, width: view.frame.width * 143/375, height: view.frame.height * 43/667))
         signupButton.setImage(#imageLiteral(resourceName: "signupButton"), for: UIControlState.normal)
         view.addSubview(signupButton)
+    }
+    
+    //Functions
+    func signupToLogin() {
+        self.performSegue(withIdentifier: "signupToLogin", sender: self)
     }
 
 
