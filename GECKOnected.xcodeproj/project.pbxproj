@@ -14,6 +14,9 @@
 		F66351C91F4238D80031F000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66351C81F4238D80031F000 /* Assets.xcassets */; };
 		F66351CC1F4238D80031F000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66351CA1F4238D80031F000 /* LaunchScreen.storyboard */; };
 		F680BED81F43C35100069CF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680BED71F43C35100069CF0 /* ViewController.swift */; };
+		F680BEDA1F43E4A800069CF0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680BED91F43E4A800069CF0 /* FeedViewController.swift */; };
+		F680BEDC1F43E4B100069CF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680BEDB1F43E4B100069CF0 /* DetailViewController.swift */; };
+		F680BEDE1F43E4C500069CF0 /* NewSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680BEDD1F43E4C500069CF0 /* NewSocialViewController.swift */; };
 		F6FD11301F423FDE00374DA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6FD112F1F423FDE00374DA7 /* GoogleService-Info.plist */; };
 		F6FD11361F4259C700374DA7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD11351F4259C700374DA7 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,9 @@
 		F66351CB1F4238D80031F000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66351CD1F4238D80031F000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F680BED71F43C35100069CF0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F680BED91F43E4A800069CF0 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F680BEDB1F43E4B100069CF0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F680BEDD1F43E4C500069CF0 /* NewSocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSocialViewController.swift; sourceTree = "<group>"; };
 		F6FD112F1F423FDE00374DA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6FD11351F4259C700374DA7 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F785B00739544D043DC8B52E /* Pods_GECKOnected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GECKOnected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +94,9 @@
 				F680BED71F43C35100069CF0 /* ViewController.swift */,
 				F66351C31F4238D80031F000 /* LoginViewController.swift */,
 				F6FD11351F4259C700374DA7 /* SignupViewController.swift */,
+				F680BED91F43E4A800069CF0 /* FeedViewController.swift */,
+				F680BEDB1F43E4B100069CF0 /* DetailViewController.swift */,
+				F680BEDD1F43E4C500069CF0 /* NewSocialViewController.swift */,
 				F66351C51F4238D80031F000 /* Main.storyboard */,
 				F66351C81F4238D80031F000 /* Assets.xcassets */,
 				F66351CA1F4238D80031F000 /* LaunchScreen.storyboard */,
@@ -232,6 +241,9 @@
 			files = (
 				F6FD11361F4259C700374DA7 /* SignupViewController.swift in Sources */,
 				F66351C41F4238D80031F000 /* LoginViewController.swift in Sources */,
+				F680BEDA1F43E4A800069CF0 /* FeedViewController.swift in Sources */,
+				F680BEDE1F43E4C500069CF0 /* NewSocialViewController.swift in Sources */,
+				F680BEDC1F43E4B100069CF0 /* DetailViewController.swift in Sources */,
 				F680BED81F43C35100069CF0 /* ViewController.swift in Sources */,
 				F66351C21F4238D80031F000 /* AppDelegate.swift in Sources */,
 			);

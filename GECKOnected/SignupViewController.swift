@@ -46,14 +46,18 @@ class SignupViewController: UIViewController {
         
         let signupButton = UIButton(frame: CGRect(x: view.frame.width * 115/375, y: view.frame.height * 508/667, width: view.frame.width * 143/375, height: view.frame.height * 43/667))
         signupButton.setImage(#imageLiteral(resourceName: "signupButton"), for: UIControlState.normal)
+        signupButton.addTarget(self, action: #selector(signupToFeed), for: .touchUpInside)
         view.addSubview(signupButton)
     }
     
-    //Functions
+    //Segue Functions
     func signupToLogin() {
         self.performSegue(withIdentifier: "signupToLogin", sender: self)
     }
-
+    
+    func signupToFeed() {
+        self.performSegue(withIdentifier: "signupToFeed", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NrY-nP-gTY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qdp-7I-rCH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,6 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="U6A-yR-JQk" kind="show" identifier="initialToFeed" id="ooz-hy-YSJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,6 +45,7 @@
                     </view>
                     <connections>
                         <segue destination="Fc0-8A-Ydc" kind="show" identifier="loginToSignup" id="fxq-w5-bEy"/>
+                        <segue destination="U6A-yR-JQk" kind="show" identifier="loginToFeed" id="neh-wK-xyU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0l-2R-99w" sceneMemberID="firstResponder"/>
@@ -63,11 +67,79 @@
                     </view>
                     <connections>
                         <segue destination="NrY-nP-gTY" kind="show" identifier="signupToLogin" id="P9h-xn-Ucn"/>
+                        <segue destination="U6A-yR-JQk" kind="show" identifier="signupToFeed" id="yxx-gI-aB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvl-Jc-UxC" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="131"/>
+            <point key="canvasLocation" x="1951" y="889"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eRj-Kk-Xxs">
+            <objects>
+                <viewController title="SignupViewController" id="U6A-yR-JQk" userLabel="View Controller" customClass="FeedViewController" customModule="GECKOnected" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rzW-jQ-orR"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCe-6L-MI8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4jb-L0-Gch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="tIk-7J-UmU" kind="presentation" identifier="feedToNewSocial" id="Asa-lo-aTt"/>
+                        <segue destination="Qdp-7I-rCH" kind="show" identifier="feedToDetail" id="DXJ-U6-4dL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAD-07-NVt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2774" y="-313"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KDf-ya-YgZ">
+            <objects>
+                <viewController title="SignupViewController" id="tIk-7J-UmU" userLabel="View Controller" customClass="NewSocialViewController" customModule="GECKOnected" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oLm-hS-X48"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ci8-cd-juz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hM3-XI-Egu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="U6A-yR-JQk" kind="presentation" identifier="newSocialToFeed" id="u1O-79-DO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7B9-Dq-8gg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="576"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YqD-Nb-v92">
+            <objects>
+                <viewController title="SignupViewController" id="Qdp-7I-rCH" userLabel="View Controller" customClass="DetailViewController" customModule="GECKOnected" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wVL-0C-wRc"/>
+                        <viewControllerLayoutGuide type="bottom" id="dVp-JD-BIF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qas-I9-0Y2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="U6A-yR-JQk" kind="show" identifier="detailToFeed" id="ygp-6G-x6h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkp-pQ-Uv2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3862" y="-749"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="neh-wK-xyU"/>
+    </inferredMetricsTieBreakers>
 </document>

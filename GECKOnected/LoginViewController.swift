@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
         
         let loginButton = UIButton(frame: CGRect(x: view.frame.width * 127/375, y: view.frame.height * 409/667, width: view.frame.width * 121/375, height: view.frame.height * 43/667))
             loginButton.setImage(#imageLiteral(resourceName: "loginButton"), for: UIControlState.normal)
+            loginButton.addTarget(self, action: #selector(loginToFeed), for: .touchUpInside)
             view.addSubview(loginButton)
         
         let createAccountButton = UIButton(frame: CGRect(x: view.frame.width * 88/375, y: view.frame.height * 554/667, width: view.frame.width * 199/375, height: view.frame.height * 42/667))
@@ -41,9 +42,13 @@ class LoginViewController: UIViewController {
             view.addSubview(createAccountButton)
     }
     
-    //Functions
+    //Segue Functions
     func loginToSignup() {
         self.performSegue(withIdentifier: "loginToSignup", sender: self)
+    }
+    
+    func loginToFeed() {
+        self.performSegue(withIdentifier: "loginToFeed", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
